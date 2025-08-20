@@ -25,7 +25,7 @@ const Navbar = () => {
   ];
 
   const travelTools = [
-    { name: "Trip Planner", path: "/trip-planner" },
+    { name: "JourneyGuide", path: "/JourneyGuide" },
     { name: "Advice", path: "/advice" },
   ];
 

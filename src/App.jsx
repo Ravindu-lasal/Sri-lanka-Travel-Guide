@@ -6,16 +6,19 @@ import Home from "./pages/Home";
 import Destinations from "./pages/Destinations";
 import DestinationDetails from "./pages/DestinationDetails";
 import Packages from "./pages/Packages";
-import TripPlanner from "./pages/TripPlanner";
+
 import Advice from "./pages/Advice";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
+
 // Import Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import JourneyGuide from './pages/JourneyGuide';
+import PackageDetails from './pages/PackageDetails';
 
 
 function App() {
@@ -30,12 +33,14 @@ function App() {
           <Route path="/destinations" element={<Destinations />} />
           <Route path="/destinations/:id" element={<DestinationDetails />} />
           <Route path="/packages" element={<Packages />} />
-          <Route path="/trip-planner" element={<TripPlanner />} />
+          <Route path="/JourneyGuide" element={<JourneyGuide />} />
           <Route path="/advice" element={<Advice />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetails />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/packages/:id" element={<PackageDetails />} />
+          
         </Routes>
       </main>
       <Footer />
